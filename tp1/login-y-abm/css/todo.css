@@ -406,6 +406,28 @@
     pointer-events: none;
 }
 
+.switch-todo-btn {
+    font-family: var(--font-family);
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--color-blue-600);
+    background: none;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0.2rem 0;
+    transition: color var(--transition-fast), opacity var(--transition-fast);
+    letter-spacing: 0.01em;
+}
+
+.switch-todo-btn:hover {
+    opacity: 0.75;
+}
+
+.todo-footer:has(.switch-todo-btn) {
+    justify-content: space-between;
+}
+
 /* responsive */
 @media (max-width: 600px) {
     .todo-body {
