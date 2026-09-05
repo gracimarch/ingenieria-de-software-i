@@ -1,0 +1,67 @@
+:root {
+    --color-peach: #F2AD94;
+    --color-lavender-100: #EBD0F2;
+    --color-lavender-300: #BCBBF2;
+    --color-blue-400: #77ACF2;
+    --color-blue-600: #5298F2;
+
+    --color-white: #FFFFFF;
+    --color-bg: #F4F5F9;
+    --color-border: #E2E4ED;
+    --color-text-primary: #1A1D2E;
+    --color-text-secondary: #6B7080;
+    --color-text-placeholder: #A8ABBE;
+
+    --font-family: 'Poppins', sans-serif;
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-xl: 1.5rem;
+    --font-size-2xl: 1.875rem;
+
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.25rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+    --space-10: 2.5rem;
+
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-xl: 28px;
+
+    --shadow-card: 0 8px 40px rgba(82, 152, 242, 0.10), 0 2px 12px rgba(26, 29, 46, 0.07);
+    --shadow-input-focus: 0 0 0 3px rgba(82, 152, 242, 0.18);
+    --shadow-btn: 0 4px 16px rgba(82, 152, 242, 0.35);
+    --shadow-btn-hover: 0 6px 24px rgba(82, 152, 242, 0.50);
+
+    --transition-fast: 0.18s ease;
+    --transition-base: 0.28s ease;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family);
+    background-color: var(--color-bg);
+    color: var(--color-text-primary);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

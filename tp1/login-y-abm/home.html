@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tu lista de tareas personal. Organiza, prioriza y completá tus pendientes del día de forma simple y elegante.">
+    <title>To-Do List — Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/todo.css">
+</head>
+
+<body>
+    <main class="todo-body">
+
+        <nav class="todo-nav" aria-label="Navegación principal">
+            <span class="nav-brand">
+                <span aria-hidden="true">✦</span> Mis tareas
+            </span>
+            <a href="login.html" class="logout-btn" id="logout-link">Cerrar sesión</a>
+        </nav>
+
+        <div class="todo-card" role="main">
+
+            <header class="todo-header">
+                <span class="todo-header-icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M13 5h8" />
+                        <path d="M13 12h8" />
+                        <path d="M13 19h8" />
+                        <path d="m3 17 2 2 4-4" />
+                        <rect x="3" y="4" width="6" height="6" rx="1" />
+                    </svg>
+                </span>
+                <h2 class="todo-title">To-Do List</h2>
+            </header>
+
+            <div class="todo-progress-wrap" aria-label="Progreso de tareas">
+                <div class="todo-progress-label" id="progress-label" aria-live="polite">
+                    <span>Sin tareas</span>
+                    <span class="count-done">—</span>
+                </div>
+                <div class="todo-progress-bar-bg" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                    <div class="todo-progress-bar-fill" id="progress-fill"></div>
+                </div>
+            </div>
+
+            <div class="todo-input-row" id="input-row">
+                <input
+                    type="text"
+                    id="todo-input"
+                    class="todo-input"
+                    placeholder="Agregá una nueva tarea…"
+                    autocomplete="off"
+                    maxlength="120"
+                    aria-label="Nueva tarea"
+                >
+                <button
+                    id="add-btn"
+                    class="todo-add-btn"
+                    aria-label="Agregar tarea"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14" />
+                        <path d="M12 5v14" />
+                    </svg>
+                </button>
+            </div>
+
+            <ul class="todo-list" id="todo-list" aria-label="Lista de tareas" aria-live="polite">
+                <!-- acá se insertan las tareas -->
+            </ul>
+
+            <div class="todo-empty" id="empty-state" style="display:none;" aria-hidden="true">
+                <p>No hay tareas</p>
+            </div>
+
+            <div class="todo-footer">
+                <button
+                    class="clear-btn"
+                    id="clear-btn"
+                    disabled
+                    aria-label="Limpiar tareas completadas"
+                >Limpiar completadas</button>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="js/todo.js"></script>
+</body>
+</html>
